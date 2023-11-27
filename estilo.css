@@ -573,6 +573,9 @@ padding: 3px;
     .cont-ubic-segu {
         order: 4;
     }
+    .contenedor_ubicaciones {
+        padding: 0 10px 45px 10px;
+    }
 }
 
 
@@ -854,13 +857,20 @@ iframe {
         border-top: 1px solid rgb(127, 124, 124);
         margin-bottom: 0%;
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-rows: auto auto;
         list-style: none;
-        gap: 40px;
+        gap: 10px;
         padding: 15px ;        
     }
     .footer-inicio {
         display: none;
+    }
+    .medio-contacto {
+        margin: 0 auto;
+        order: 1;
+    }
+    .footer-ayuda {
+        order: 2;
     }
 }
 
