@@ -576,6 +576,11 @@ padding: 3px;
     .contenedor_ubicaciones {
         padding: 0 10px 45px 10px;
     }
+    .mapas-gm iframe{
+        width:300px ;
+        height: 150px; 
+        margin: 0 auto;
+    }
 }
 
 
