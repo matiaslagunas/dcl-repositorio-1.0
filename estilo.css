@@ -173,7 +173,7 @@ li.sublista-open:hover .sublista {
 }
 
 .img-div{
-    background-image: url("../imagenes-coder/foto-telas.jpg");
+    background-image: url("../coderhouse.html/imagenes-coder/foto-telas.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -322,7 +322,7 @@ align-items: start;
 
 
 .img-principal {
-    background-image: url(../imagenes-coder/img-telas-index.jpg);
+    background-image: url(../coderhouse.html/imagenes-coder/img-telas-index.jpg);
     
     background-repeat: no-repeat;
     background-size: cover;
