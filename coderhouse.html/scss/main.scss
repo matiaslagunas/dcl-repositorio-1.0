@@ -872,6 +872,7 @@ iframe {
         border-top: 1px solid rgb(127, 124, 124);
         margin-bottom: 0%;
         display: grid;
+        grid-template-columns: auto;
         grid-template-rows: auto auto;
         list-style: none;
         gap: 10px;
@@ -888,9 +889,6 @@ iframe {
         order: 2;
     }
 }
-
-
- 
 
 
 /* pagina ayuda */
