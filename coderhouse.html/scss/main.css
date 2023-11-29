@@ -523,6 +523,11 @@ li.sublista-open:hover .sublista {
   margin: 0;
 }
 
+.cont-ubic-prim iframe {
+  width: 400px;
+  height: 200px;
+}
+
 .sec-cont-text p {
   margin: 0%;
   grid-area: 3/4;
