@@ -1,10 +1,12 @@
 
+@import "$var";
+
 
 
 * {
     
     margin: 0;
-    margin-top: 0;  
+     
 }
 body {
     background: linear-gradient(90deg, #ffffff, #cfdee7);
@@ -47,7 +49,7 @@ font-family: 'Oswald', sans-serif;
 .color_head {
     color: #fff;
 }
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .hr_header {
         margin:0;
     }
@@ -185,7 +187,7 @@ li.sublista-open:hover .sublista {
     border-bottom: 5px solid #4d4c4c;
     
 }
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .img-div{
        display: none;
 }
@@ -270,7 +272,7 @@ align-items: start;
     font-size: larger;
     
 }
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .sublista_index {
         width: 100%;
         height: auto;
@@ -279,7 +281,7 @@ align-items: start;
         background-color: #a5a5a5;
     }
     .titulo-sublista {
-        grid-column: 1/4;
+        
         margin: 0px auto 7px auto;
         font-family: 'Oswald', sans-serif;
     }
@@ -302,7 +304,7 @@ align-items: start;
     width: 100%;
     
 }
-@media (max-width:500px) {
+@media (max-width: $celular) {
     .direc-text {
         padding: 60px 0 0 0;
         display: block;
@@ -405,7 +407,7 @@ padding: 3px;
     gap: 30px;
     justify-content: space-between;  
 }
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .apartado-direccion {
         width: 100%;
         margin-top: 50px;
@@ -440,7 +442,7 @@ padding: 3px;
 .prendas_oculta {
     display: none;
 }
-@media (max-width:501px) {
+@media (max-width: $celular) {
     /* apartado celu*/
     .tipos-prendas-responsive {
         display: block;
@@ -550,7 +552,7 @@ padding: 3px;
     margin-left: 0%;
     
 }
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .ubicacion_contenedor {
         width: 95%;
         display: grid;
@@ -562,6 +564,7 @@ padding: 3px;
         align-items: center;
         margin-left: 0%;
         row-gap: 20px;  
+        background-color: $colorprin;
     }
     .pri-cont-text {
         order: 1;
@@ -597,12 +600,7 @@ padding: 3px;
     margin: 0;
     
 }
-.cont-ubic-prim iframe{
-    width: 400px;
-    height: 200px;
-   
-    
-}
+
 
 .sec-cont-text p {
     margin: 0%;
@@ -648,7 +646,7 @@ iframe {
     text-align: center;
     font-size: 20px;
 }
-@media (max-width:500px) {
+@media (max-width:$celular) {
     .titulo-marcas {
         text-align: center;
         font-size: 20px;
@@ -762,7 +760,7 @@ iframe {
     transform: scale(1.2);
 }
 
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .img-marcas {
         margin: 0 auto;
         width: 80%;
@@ -871,14 +869,13 @@ iframe {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .footer {
-        width: 100%;
         border-top: 1px solid rgb(127, 124, 124);
         margin-bottom: 0%;
         display: grid;
-        grid-template-columns: auto;
         grid-template-rows: auto auto;
+        grid-template-columns: auto;
         list-style: none;
         gap: 10px;
         padding: 15px ;        
@@ -894,6 +891,9 @@ iframe {
         order: 2;
     }
 }
+
+
+ 
 
 
 /* pagina ayuda */
@@ -936,7 +936,7 @@ iframe {
     padding: 50px 50px 0 150px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .contenedor-img-preguntas {
         display: none;          
     }
@@ -1032,7 +1032,7 @@ iframe {
 }
 
 
-@media (max-width:500px) {
+@media (max-width: $celular) {
     .img-estrechamiento {
         display: none;
     }
@@ -1124,7 +1124,7 @@ border-bottom: 2px solid #dde3eb;
 
 
 
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .contenedor-loguin {
         border: 2px solid #3e3e3c;
         border-radius: 5%;
@@ -1234,7 +1234,7 @@ html {
     height: auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: $celular) {
     .header-secundario {
         background-color: #514f4f;
         max-height: 70px;
@@ -1345,7 +1345,7 @@ padding: 2px;
 
 
 
-@media (max-width: 501px) {
+@media (max-width: $celular) {
     .contenedor-ropa{
         width: 100%;
         background-color:transparent;
@@ -1354,4 +1354,147 @@ padding: 2px;
         margin-top: 30px;
         padding: 8%;
     } 
+}
+
+
+//sublista tablet del index ---------------------------------------------------
+
+@media (min-width: $celular) and (max-width: $tablet) {
+    .hr_header {
+        margin:0;
+    }
+   //sublista
+    .sublista_index {
+        width: 100%;
+        height: 85px;
+        display: grid;
+        grid-template-columns: 250px 150px 250px;
+        grid-template-rows: 50px 50px;
+        justify-content: center;
+        background-color: #8f8f8f;
+    }
+
+    .tipos-prendas-responsive {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .cont_1 p, .cont_2 p {
+        margin: 0;
+    }
+    .titulo_sec {
+        color: #4b86c5;
+        
+    }
+
+    .tipos-prendas {
+        display: none;
+    }
+    .prendas_oculta {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .prendas-oc-flex{
+        display: flex;
+        margin: 25px auto;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .prendas-oc-flex div p {
+        text-align: start;
+        margin: 0;
+
+        
+    }
+    .hr-tipo {
+        margin: 0;
+    }
+    .apartado-direccion {
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 80%;
+        padding: 40px 40px 0 40px;
+        text-align: center;
+        gap: 30px;
+        justify-content: center;  
+   
+    }
+    //mapas y ubic
+    .ubicacion_contenedor {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 230px 230px;
+        grid-template-rows: 250px 250px;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 0%;
+        
+    }
+    .mapas-gm iframe{
+        width:280px ;
+        height: 180px; 
+        
+    }
+    iframe {
+         border-radius: 5%; 
+    }
+    //seccion marcas trabajadas
+    .img-marcas {
+        margin: 0 auto;
+        width: 80%;
+       display: grid;
+       grid-template-columns: auto auto auto ;
+       grid-template-rows: auto auto auto auto ;
+        justify-content: center;
+        gap: 50px;
+        padding: 30px 0;
+        align-items: center;
+    } 
+    .img-puma:hover {
+       transform: scale(1);
+    }
+    .img-reef:hover {
+        transform: scale(1);
+    }
+    .img-chs:hover {
+        transform: scale(1);
+    }
+    .img-est:hover {
+        transform: scale(1);
+    }
+    .img-head:hover {
+        transform: scale(1);
+    }
+    .img-cat:hover {
+        transform: scale(1);
+    }
+    .img-fan:hover {
+        transform: scale(1);
+    }
+    .img-sei:hover {
+        transform: scale(1);
+    }
+    .img-sil:hover {
+        transform: scale(1);
+    }
+    .img_marcas {
+        width: 100px;
+        height: auto;
+    }
+
+}
+
+//sublista tablet del login ---------------------------------------------------
+
+@media (min-width: $celular) and (max-width: $tablet) {
+    .contenedor-loguin {
+        border: 2px solid #3e3e3c;
+        border-radius: 5%;
+        width: 60%;
+        margin: 50px auto;
+        padding: 10px 0; 
+   }   
 }
