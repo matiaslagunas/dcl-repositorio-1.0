@@ -1,11 +1,10 @@
 
 @import "$var";
+@import "$index";
 
 
 * {
-    
-    margin: 0;
-     
+    margin: 0;   
 }
 body {
     background: linear-gradient(90deg, #ffffff, #cfdee7);
@@ -15,9 +14,6 @@ body {
 font-family: 'Merriweather', serif;
 font-family: 'Nosifer', sans-serif;
 font-family: 'Oswald', sans-serif;
-    
-   
-    
 }
 
 .main {
@@ -167,36 +163,13 @@ li.sublista-open:hover .sublista {
 
 
 
-.title-dcl{
-    font-size: 100px ;
-    text-align: center;
-    margin-top: 40px;
-    padding-bottom: 50px;
-    
-}
 
-.img-div{
-    background-image: url("../imagenes-coder/foto-telas.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
-    padding-top: 1px;
-    margin-top: 0px;
-    border-bottom: 5px solid #4d4c4c;
-    
-}
 @media (max-width: $celular) {
     .img-div{
        display: none;
 }
 }
 
-.texto {
-    padding-bottom: 50px;
-    
-    
-}
 
 .texto-princip {
     
@@ -244,33 +217,10 @@ align-items: start;
 
 
 
-/* sublista index */
 
-.sublista_index {
-    width: 100%;
-    height: 85px;
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 50px 50px;
-    justify-content: center;
-    background-color: #8f8f8f;
-}
-.titulo-sublista {
-    grid-column: 1/4;
-    margin: 0 auto;
-    font-family: 'Oswald', sans-serif;
-}
-.sublista_index ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0 auto;
-}
-.sublista_index li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: larger;
-    
-}
+
+
+/* sublista index */
 @media (max-width: $celular) {
     .sublista_index {
         width: 100%;
@@ -297,12 +247,6 @@ align-items: start;
 
 
 
-.direc-text {
-    padding: 60px 0 0 0;
-    display:flex;
-    width: 100%;
-    
-}
 @media (max-width: $celular) {
     .direc-text {
         padding: 60px 0 0 0;
@@ -315,87 +259,8 @@ align-items: start;
         padding: 5px; 
     }
 }
-.texto-inicio {
-    text-align: start;
-    max-width: 40%;
-    width: 1fr;
-    padding:0 25px 0 50px; 
-}
 
-
-
-.img-principal {
-    background-image: url(../imagenes-coder/img-telas-index.jpg);
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    width: 60%;
-    padding: 0 0 0 0;
-    margin-right: 50px;
-    border-radius: 2%;
-    margin-left: 25px;
-    
-}
-.img-principal div {
-    width: 100%;
-    height: 100%;
-    background-color: #bcbcbc;
-    border-radius: 2%;
-    opacity: 0.7;
-    display: none;
-    transition-duration: 0.5s;
-    
-}
-.img-principal:hover div {
-    display: block;
-    transition-duration: 0.5s;
-} 
-.img-principal h3 {
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #000;
-     
-    font-size: xx-large;
-    padding-top: 22%;
-    border-radius: 2%;
-    display: none;
-    transition-duration: 1s;
-}
-.img-principal:hover h3 {
-    display: block;
-}
-
-
-
-.contenedor-exvese{
-    width: 90%;
-    height: auto;
-    
-    
-    border-top: 3px solid #4d4c4c;
-    border-bottom: 3px solid #4d4c4c;
-    border-left: 20px solid #4d4c4c;
-    border-right: 20px solid #4d4c4c;
-    margin: 80px auto 50px auto;
-    padding: 15px 0;
-    text-align: center;
-}
-.contenedor-exvese h2, h3, p {
-padding: 3px;
-}
-
-
-
-
-
-
-
-
-
+// apartado paso a 
 .apartado-direccion {
     width: 100%;
     margin-top: 50px;
