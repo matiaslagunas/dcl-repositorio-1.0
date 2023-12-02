@@ -12,11 +12,11 @@ body {
 }
 .texto-pagina-comp {
     font-family: 'Bebas Neue', sans-serif;
-font-family: 'Merriweather', serif;
-font-family: 'Nosifer', sans-serif;
-font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Nosifer', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
-
+//estoy aca
 .main {
     padding: 0px ;
 }
@@ -33,12 +33,12 @@ font-family: 'Oswald', sans-serif;
     bottom: 30px;
     right: 30px;
     text-decoration: none;
-    background-color: #707070;
+    background-color: $color-sec;
     text-align:  center;
     border-radius: 10%;
     border: 2px solid;
     font-size: larger;
-    color: #749ce6;
+    color: #5a5a5a;
 }
 
 /* header */
@@ -263,13 +263,13 @@ align-items: start;
 
 // apartado paso a 
 .apartado-direccion {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 59% 35%;
-    padding: 40px 40px 40px 40px;
-    text-align: center;
-    gap: 30px;
-    justify-content: space-between;  
+    // width: 100%;
+    // display: grid;
+    // grid-template-columns: 59% 35%;
+    // padding: 30px 40px 20px 40px;
+    // text-align: center;
+    // gap: 30px;
+    // justify-content: space-between;  
 }
 @media (max-width: $celular) {
     .apartado-direccion {
@@ -279,10 +279,12 @@ align-items: start;
     }
 }
 .contenedor_ubicaciones{
-    width: 100%;
-    padding: 40px 50px
+    // width: 100%;
+    // padding: 40px 50px
 }
-
+.ubicacion_contenedor {
+    padding: 10px 0 25px 0;
+}
 .mapa {
     width: 250px;
     height: 170px;
@@ -417,8 +419,7 @@ align-items: start;
     
 }
 .fondo-mapas {
-    background-color: #e3e3e3;
-    border-radius: 5%;
+    background-color: $color-sec;
 }
 
 @media (max-width: $celular) {
@@ -495,12 +496,12 @@ iframe {
 
 
 .titulo{
-    color: #404040;
-    font-family: 'Nosifer', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    box-shadow: 5px solid #000;
-    font-size: x-large;
-    margin-top: 0%;
+    // color: #404040;
+    // font-family: 'Nosifer', sans-serif;
+    // font-family: 'Oswald', sans-serif;
+    // box-shadow: 5px solid #000;
+    // font-size: x-large;
+    // margin-top: 0%;
     
 }
 
