@@ -1,4 +1,30 @@
 
+//boton volver 
+.btn-volver {
+    position: fixed;
+    width: 70px;
+    height: auto;
+    line-height: 30px;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    background-color: $color-sec;
+    text-align:  center;
+    border-radius: 10%;
+    border: 2px solid;
+    font-size: larger;
+    color: #5a5a5a;
+}
+
+* {
+    margin: 0;   
+}
+
+//header
+.logo-dcl-b {
+    width: 80px;
+    height: auto;
+}
 
 .img-div {
     // background-image: url("../imagenes-coder/foto-telas.jpg");
@@ -17,6 +43,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: $tipo-titulo;
         & img {           
             width: 200px;
             height: auto;
@@ -38,7 +65,7 @@
     & .titulo-sublista {
         grid-column: 1/4;
         margin: 0 auto;
-        font-family: 'Oswald', sans-serif;
+        font-family: $tipo-titulo;
     }
     & ul {
         list-style: none;
@@ -48,6 +75,7 @@
             text-decoration: none;
             color: #212529;
             font-size: larger;
+            font-family: $tipo-texto;
         }
     }
     
@@ -67,10 +95,10 @@
         width: 1fr;
         padding:0 25px 0 50px;
         & .titulo {
-
+            font-family: $tipo-titulo;
         }
         & p {
-
+            font-family: $tipo-texto;
         }
 
     }
@@ -138,12 +166,15 @@
         text-align: center;
         & h2 {
             padding: 3px;
+            font-family: $tipo-titulo;
         }
         & h3 {
             padding: 3px;
+            font-family: $tipo-titulo;
         }
         & p {
             padding: 3px;
+            font-family: $tipo-texto;
         }
     }
 }
@@ -172,19 +203,378 @@
         margin-top: 0%;
         }
         & p {
-            font-family: 'Bebas Neue', sans-serif;
-            font-family: 'Merriweather', serif;
-            font-family: 'Nosifer', sans-serif;
-            font-family: 'Oswald', sans-serif;
+            font-family: $tipo-texto;
         }
         }
         
-    } 
-    .tipos-prendas {
-        & h2 {
+} 
 
+.tipos-prendas {
+        width: 100%;
+        padding: 50px 40px;
+        text-align: start;
+        & h2 {
+            font-family: $tipo-titulo;
         }
         & ul {
+            padding-left: 0;
+            & .items-de-punto {
+                //texto-pag-comp
+                font-family: $tipo-texto;
+                //items-prendas
+                list-style: none;
+                text-align: start;
 
+                &:hover .sublista_punto {
+                    display: block;
+                    position: absolute;
+                    margin-left: 100px;
+                    margin-top: -32px;
+                }
+                & .sublista_punto {
+                    //texto-pag-comp
+                    font-family: $tipo-texto;
+                    //items-prendas
+                    list-style: none;
+                    text-align: start;
+                    // preparacion hover
+                    display: none;
+                    transition-duration: 0.5s;
+                    & li {
+                        font-family: $tipo-texto;
+                    }
+                }
+            }
+            & .items-de-plano {
+                //texto-pag-comp
+                font-family: $tipo-texto;
+                //items-prendas
+                list-style: none;
+                text-align: start;
+
+                &:hover .sublista_plano {
+                    display: block;
+                    position: absolute;
+                    margin-left: 100px;
+                    margin-top: -32px;
+                }
+                & .sublista_plano {
+                    //texto-pag-comp
+                    font-family: $tipo-texto;
+                    //items-prendas
+                    list-style: none;
+                    text-align: start;
+                    // preparacion hover
+                    display: none;
+                    transition-duration: 0.5s;
+
+                    & li {
+                        font-family: $tipo-texto;
+                    }
+                }
+            }
+            & .items-de-especiales {
+                //texto-pag-comp
+                font-family: $tipo-texto;
+                //items-prendas
+                list-style: none;
+                text-align: start;
+
+                &:hover .sublista_especiales {
+                    display: block;
+                    position: absolute;
+                    margin-left: 100px;
+                    margin-top: -32px;
+                }
+                & .sublista_especiales {
+                    //texto-pag-comp
+                    font-family: $tipo-texto;
+                    //items-prendas
+                    list-style: none;
+                    text-align: start;
+                    // preparacion hover
+                    display: none;
+                    transition-duration: 0.5s;
+                    & li {
+                        font-family: $tipo-titulo;
+                    }
+                }
+            }
+        }
+}
+
+    //tipos de prendas responsive
+.tipos-prendas-responsive {
+        display: none;
+        & .cont_titulo {
+            & h2 {
+                font-family: $tipo-titulo;
+            }
+        }
+        & .cont_1 {
+            & .titulo_sec {
+                font-family: $tipo-titulo;
+            }
+            & p {
+                font-family: $tipo-texto;
+            }
+        }
+        & .cont_2 {
+            & .titulo_sec {
+                font-family: $tipo-titulo;
+            }
+            & p {
+                font-family: $tipo-texto;
+            }
+        }
+        & .cont_3 {
+            & .titulo_sec {
+                font-family: $tipo-titulo;
+            }
+            & p {
+                font-family: $tipo-texto;
+            }
+        }
+
+}
+
+//seccion mapas
+
+.fondo-mapas {
+    background-color: $color-sec;
+    .ubicacion_contenedor {
+        padding: 10px 0 30px 0;
+        width: 97%;
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 250px 250px;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 0%;
+        //ubicacion escrita
+        .pri-cont-text{
+            & h3 {
+                font-family: $tipo-titulo;
+            }
+            & p {
+                margin: 0;
+                font-family: $tipo-texto;
+            }
+        }
+        .sec-cont-text{
+            & h3 {
+                font-family: $tipo-titulo;
+            }
+            & p {
+                margin: 0%;
+                grid-area: 3/4;
+                font-family: $tipo-texto;
+            }
+        }
+        //ubicacion mapa
+        .cont-ubic-prim {
+            & iframe {
+
+            }
+        }
+        .cont-ubic-segu {
+            & iframe {
+
+            }
         }
     }
+}
+.mapas-gm iframe{
+    width:400px ;
+    height: 200px;     
+}
+iframe {
+    border-radius: 5%; 
+}
+
+//marcas trabajadas
+
+.titulo-marcas {
+    text-align: center;
+    font-size: 20px;
+    & h1 {
+        font-family: $tipo-titulo;
+    }
+    & p {
+        font-family: $tipo-texto;
+    }
+}
+
+.img-marcas {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    text-align: center;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 30px 0;
+    align-items: center;
+    & .logo-marca {
+        display: flex;    
+        align-items: center;
+        //img puma
+        & .img-puma {
+            height: 130px;
+            width: auto;
+            background-color: transparent;
+            transition: 0.3s;           
+        }
+        .img-puma:hover {
+            transform: scale(1.2);
+        }
+        //img reef
+        & .img-reef {
+            height: 150px;
+            width: 200px;
+            background-color: transparent;
+            transition: 0.3s;
+        }
+        .img-reef:hover {
+           transform: scale(1.2);
+         }
+         //img chs
+        & .img-chs {
+            height: 150px;
+            width: 150px;
+            background-color: transparent;
+            transition: 0.3s;
+        }
+        .img-chs:hover {
+            transform: scale(1.2);
+        }
+        //img estudiantes
+        & .img-est {
+            width: 110px;
+            height: auto;
+            transition: 0.3s;
+        }
+        .img-est:hover {
+                transform: scale(1.2);
+        }
+        // img head
+        & .img-head {
+            width: 150px;
+            height: auto;
+            transition: .3s;
+        }
+        .img-head:hover {
+            transform: scale(1.2);
+        }
+        //img cater
+        & .img-cat {
+            width: 150px;
+            height: auto;
+            transition: .3s;
+        }
+        .img-cat:hover {
+            transform: scale(1.2);
+        }
+        // img fantoche
+        & .img-fan {
+            width: 150px;
+            height: auto;
+            transition: .3s;
+        }
+        .img-fan:hover {
+            transform: scale(1.2);
+        }
+        // img seiko
+        & .img-sei {
+            width: 150px;
+            height: auto;
+            transition: .3s;
+        }
+        .img-sei:hover {
+            transform: scale(1.2);
+        }
+        //img silla arg
+        & .img-sil {
+            width: 150px;
+            height: auto;
+            transition: .3s;
+        }
+        .img-sil:hover {
+            transform: scale(1.2);
+        }
+    }
+
+}
+
+//footer
+.div-footer {
+    background-color: transparent;
+    & .footer {
+        border-top: 1px solid rgb(127, 124, 124);
+        margin-bottom: 0%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        list-style: none;
+        gap: 40px;
+        padding: 15px ;
+            //nav
+        & .footer-inicio {
+            text-align: center;
+            & h4 {
+                padding-left: 40px;
+                font-family: $tipo-titulo;
+            }
+            & .footer-lista {
+                & .li-footer {
+                    list-style: none;
+                    & a {
+                        color: #000;
+                        text-decoration:none;
+                        font-family: $tipo-texto;
+                    }
+                }
+                .li-footer a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }   
+
+        //ayuda
+        & .footer-ayuda {
+            & h4 {
+                font-family: $tipo-titulo;
+                text-align: center;
+            }
+            & .contenedor-img-pagos {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto;
+                align-items: center;
+                justify-content: center; 
+                gap: 4px;
+                & .img-pago-footer {
+                    width: 60px;
+                    height: auto;
+                }
+            }
+        }
+
+        //medio contacto
+        & .medio-contacto {
+            align-items: center;
+            & h4 {
+                font-family: $tipo-titulo;
+            }
+            & ul {
+                padding: 0%;
+                & li {
+                    list-style: none;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+        
+        
+       
