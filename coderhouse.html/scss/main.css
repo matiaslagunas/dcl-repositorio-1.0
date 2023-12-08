@@ -39,7 +39,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .img-div .texto img {
   width: 200px;
@@ -59,7 +60,8 @@
 .sublista_index .titulo-sublista {
   grid-column: 1/4;
   margin: 0 auto;
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .sublista_index ul {
   list-style: none;
@@ -70,7 +72,8 @@
   text-decoration: none;
   color: #212529;
   font-size: larger;
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .direc-text {
@@ -86,10 +89,12 @@
   padding: 0 25px 0 50px;
 }
 .direc-text .texto-inicio .titulo {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .direc-text .texto-inicio p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 .direc-text .img-principal {
   background-image: url(../imagenes-coder/img-telas-index.jpg);
@@ -118,7 +123,8 @@
   height: 100%;
   text-align: center;
   color: #000;
-  font-size: xx-large;
+  font-family: Arial;
+  font-size: 38px;
   padding-top: 22%;
   border-radius: 2%;
   display: none;
@@ -142,26 +148,23 @@
 }
 .fondo-exvese .contenedor-exvese {
   width: 90%;
-  height: 200px;
+  height: 220px;
   border-top: 3px solid #4d4c4c;
   border-bottom: 3px solid #4d4c4c;
   border-left: 20px solid #4d4c4c;
   border-right: 20px solid #4d4c4c;
   margin: 0 auto 0 auto;
-  padding: 15px 0;
   text-align: center;
 }
 .fondo-exvese .contenedor-exvese h2 {
   padding: 3px;
-  font-family: "Oswald", sans-serif;
-}
-.fondo-exvese .contenedor-exvese h3 {
-  padding: 3px;
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .fondo-exvese .contenedor-exvese p {
   padding: 3px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .apartado-direccion {
@@ -180,15 +183,14 @@
   align-items: center;
 }
 .apartado-direccion .contenedor_ubicaciones h2 {
-  color: #404040;
-  font-family: "Nosifer", sans-serif;
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
   box-shadow: 5px solid #000;
-  font-size: x-large;
   margin-top: 0%;
 }
 .apartado-direccion .contenedor_ubicaciones p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .tipos-prendas {
@@ -197,13 +199,15 @@
   text-align: start;
 }
 .tipos-prendas h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .tipos-prendas ul {
   padding-left: 0;
 }
 .tipos-prendas ul .items-de-punto {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
   list-style: none;
   text-align: start;
 }
@@ -214,17 +218,19 @@
   margin-top: -32px;
 }
 .tipos-prendas ul .items-de-punto .sublista_punto {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
   list-style: none;
   text-align: start;
   display: none;
   transition-duration: 0.5s;
 }
 .tipos-prendas ul .items-de-punto .sublista_punto li {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .tipos-prendas ul .items-de-plano {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
   list-style: none;
   text-align: start;
 }
@@ -235,17 +241,20 @@
   margin-top: -32px;
 }
 .tipos-prendas ul .items-de-plano .sublista_plano {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
   list-style: none;
   text-align: start;
   display: none;
   transition-duration: 0.5s;
 }
 .tipos-prendas ul .items-de-plano .sublista_plano li {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 .tipos-prendas ul .items-de-especiales {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
   list-style: none;
   text-align: start;
 }
@@ -256,39 +265,48 @@
   margin-top: -32px;
 }
 .tipos-prendas ul .items-de-especiales .sublista_especiales {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
   list-style: none;
   text-align: start;
   display: none;
   transition-duration: 0.5s;
 }
 .tipos-prendas ul .items-de-especiales .sublista_especiales li {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .tipos-prendas-responsive {
   display: none;
 }
 .tipos-prendas-responsive .cont_titulo h2 {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .tipos-prendas-responsive .cont_1 .titulo_sec {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .tipos-prendas-responsive .cont_1 p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 .tipos-prendas-responsive .cont_2 .titulo_sec {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .tipos-prendas-responsive .cont_2 p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 .tipos-prendas-responsive .cont_3 .titulo_sec {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .tipos-prendas-responsive .cont_3 p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .fondo-mapas {
@@ -306,20 +324,25 @@
   margin-left: 0%;
 }
 .fondo-mapas .ubicacion_contenedor .pri-cont-text h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .fondo-mapas .ubicacion_contenedor .pri-cont-text p {
   margin: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 .fondo-mapas .ubicacion_contenedor .sec-cont-text h3 {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .fondo-mapas .ubicacion_contenedor .sec-cont-text p {
   margin: 0%;
   grid-area: 3/4;
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
+
 .mapas-gm iframe {
   width: 400px;
   height: 200px;
@@ -334,10 +357,12 @@ iframe {
   font-size: 20px;
 }
 .titulo-marcas h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .titulo-marcas p {
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 
 .img-marcas {
@@ -445,9 +470,10 @@ iframe {
 .div-footer .footer .footer-inicio {
   text-align: center;
 }
-.div-footer .footer .footer-inicio h4 {
+.div-footer .footer .footer-inicio h3 {
   padding-left: 40px;
-  font-family: "Oswald", sans-serif;
+  font-family: Arial;
+  font-size: 38px;
 }
 .div-footer .footer .footer-inicio .footer-lista .li-footer {
   list-style: none;
@@ -455,13 +481,15 @@ iframe {
 .div-footer .footer .footer-inicio .footer-lista .li-footer a {
   color: #000;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
 }
 .div-footer .footer .footer-inicio .footer-lista .li-footer a:hover {
   text-decoration: underline;
 }
-.div-footer .footer .footer-ayuda h4 {
-  font-family: "Oswald", sans-serif;
+.div-footer .footer .footer-ayuda h3 {
+  font-family: Arial;
+  font-size: 38px;
   text-align: center;
 }
 .div-footer .footer .footer-ayuda .contenedor-img-pagos {
@@ -479,8 +507,9 @@ iframe {
 .div-footer .footer .medio-contacto {
   align-items: center;
 }
-.div-footer .footer .medio-contacto h4 {
-  font-family: "Oswald", sans-serif;
+.div-footer .footer .medio-contacto h3 {
+  font-family: Arial;
+  font-size: 38px;
 }
 .div-footer .footer .medio-contacto ul {
   padding: 0%;
@@ -488,6 +517,7 @@ iframe {
 .div-footer .footer .medio-contacto ul li {
   list-style: none;
   text-align: start;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .titulo-izqu {
