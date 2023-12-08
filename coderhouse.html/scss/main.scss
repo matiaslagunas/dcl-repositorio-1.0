@@ -39,13 +39,58 @@
         font-size: 30px;
     }
 
+    //contenedor exvese
+    .fondo-exvese {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        background-color: $color-sec;
+        display: grid;
+        align-items: center;
+        .contenedor-exvese {
+            width: 90%;
+            height: 240px;       
+            border-top: 3px solid #4d4c4c;
+            border-bottom: 3px solid #4d4c4c;
+            border-left: 20px solid #4d4c4c;
+            border-right: 20px solid #4d4c4c;
+            margin: 0 auto 0 auto;
+            text-align: center;
+    
+            & h2 {
+                padding: 1px;
+                font-family: $tipo-titulo;
+                font-size: 29px;
+            }
+            & p {
+                padding: 1px;
+                font-family: $tipo-texto;
+                font-size: $tamaño-texto;
+            }
+        }
+    }
 }
 
 @media (max-width: $celular) {
+    
     .direc-text {
         padding: 60px 0 0 0;
         display: block;
-        width: 100%;
+        min-width: 100%;
+    }
+    .contenedor_ubicaciones {
+    min-width: 100%;
+    padding: 0px;
+    
+        & h2 {
+            width: 90%;
+        }
+        & p {
+            width: 90%;
+        }
+    }
+    .apartado-direccion {
+        padding: 0px;
     }
     .texto-inicio {
         text-align: start;
@@ -57,9 +102,27 @@
 @media (max-width: $celular) {
     .apartado-direccion {
         width: 100%;
-        margin-top: 50px;
-        display: block;
-    }
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        text-align: center ;      
+        .contenedor_ubicaciones {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            & h2 {
+            font-family: $tipo-titulo;
+            font-size: $tamaño-titulo;
+            box-shadow: 5px solid #000;
+            margin-top: 0%;
+            }
+            & p {
+                font-family: $tipo-texto;
+                font-size: $tamaño-texto;
+            }
+            }
+            
+    } 
 }
 
 @media (max-width: $celular) {
@@ -102,52 +165,6 @@
     }
 }
 
-// @media (max-width: $celular) {
-// //     .fondo-mapas {
-        
-        
-// //     }
-//     .ubicacion_contenedor {
-// //         width: 100%;
-//         display: grid;
-//         grid-template-columns: auto;
-//         grid-template-rows: 250px 250px 250px 250px;
-// //         justify-content: center;
-// //         justify-items: center;
-// //         text-align: start;
-// //         align-items: center;
-// //         margin-left: 0%;
-// //         row-gap: 20px;  
-// //         background-color: $colorprin;
-//     }
-//     .pri-cont-text {
-//         order: 1;
-//     }
-//     .cont-ubic-prim {
-//         order: 2;
-//         width: 200px;
-//         margin: 0 auto;
-//         padding-left: 10%;
-        
-//     }
-//     .sec-cont-text {
-//         order: 3;
-//     }
-//     .cont-ubic-segu {
-//         order: 4;
-//         width: 200px;
-//         margin: 0 auto;
-//         padding-left: 10%;
-//     }
-// //     .contenedor_ubicaciones {
-// //         padding: 0 0 45px 0;
-// //     }
-// //     .mapas-gm iframe{
-// //         max-width:200px ;
-// //         height: auto;
-// //         margin: 0 auto;
-// //     }
-// }
 
 @media (max-width: $celular) {
     .fondo-mapas {
@@ -167,7 +184,8 @@
             margin-left: 0%;
             //ubicacion escrita
             .pri-cont-text{
-                max-width: 403.28px;
+                order: 1;
+                max-width: 300px;
                 & h3 {
                     font-family: $tipo-titulo;
                     font-size: $tamaño-titulo;
@@ -179,7 +197,8 @@
                 }
             }
             & .sec-cont-text{
-                max-width: 403.28px;
+                max-width: 310px;
+                order: 3;
                 & h3 {
                     font-family: $tipo-titulo;
                     font-size: $tamaño-titulo;
@@ -190,17 +209,21 @@
                     font-size: $tamaño-texto;
                 }
             }
-            //ubicacion mapa
-            // .cont-ubic-prim {
-            //     & iframe {
-    
-            //     }
-            // }
-            // .cont-ubic-segu {
-            //     // & iframe {
-    
-            //     // }
-            // }                   
+          //  ubicacion mapa
+            .cont-ubic-prim {
+                order: 2;
+                & iframe {
+                    max-width: 300px;
+                    height: 160px;
+                }
+            }
+            .cont-ubic-segu {
+                order: 4;
+                & iframe {
+                    max-width: 300px;
+                    height: 160px;
+                }
+            }                   
         }
     }
 }
@@ -254,33 +277,21 @@
         transform: scale(1);
     }
     .img_marcas {
-        width: 100px;
+        max-width: 80px;
         height: auto;
     }
 }
 
 @media (max-width: $celular) {
-    .footer {
-        border-top: 1px solid rgb(127, 124, 124);
-        margin-bottom: 0%;
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: auto;
-        list-style: none;
-        gap: 10px;
-        padding: 15px ;        
-    }
-    .footer-inicio {
-        display: none;
-    }
-    .medio-contacto {
-        margin: 0 auto;
-        order: 1;
-    }
-    .footer-ayuda {
-        order: 2;
-    }
-}
+   
+    
+            //medio contacto
+            & .medio-contacto {
+                display: block;
+              
+            }
+        }
+    
 
 
  
@@ -744,6 +755,7 @@ padding: 2px;
         margin-top: 30px;
         padding: 8%;
     } 
+
 }
 
 
@@ -800,17 +812,17 @@ padding: 2px;
     .hr-tipo {
         margin: 0;
     }
-    .apartado-direccion {
-        width: 100%;
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: 80%;
-        padding: 40px 40px 0 40px;
-        text-align: center;
-        gap: 30px;
-        justify-content: center;  
+    // .apartado-direccion {
+    //     width: 100%;
+    //     margin-top: 50px;
+    //     display: grid;
+    //     grid-template-columns: 80%;
+    //     padding: 40px 40px 0 40px;
+    //     text-align: center;
+    //     gap: 30px;
+    //     justify-content: center;  
    
-    }
+    // }
     //mapas y ubic
     .ubicacion_contenedor {
         width: 95%;
@@ -887,6 +899,4 @@ padding: 2px;
         margin: 50px auto;
         padding: 10px 0; 
    }   
-} 
-
-
+}

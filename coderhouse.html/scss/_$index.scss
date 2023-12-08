@@ -533,9 +533,8 @@ iframe {
 }
 
 //footer
-.div-footer {
-    background-color: transparent;
-    & .footer {
+
+    .footer {
         border-top: 1px solid rgb(127, 124, 124);
         margin-bottom: 0%;
         display: grid;
@@ -605,7 +604,7 @@ iframe {
             }
         }
     }
-}
+
         
         
        
