@@ -360,6 +360,8 @@
 
 .fondo-mapas {
     background-color: $color-sec;
+    width: 100%;
+    height: auto;
     .ubicacion_contenedor {
         padding: 10px 0 30px 0;
         width: 97%;
@@ -394,17 +396,17 @@
                 font-size: $tamaño-texto;
             }
         }
-        //ubicacion mapa
-        // .cont-ubic-prim {
-        //     // & iframe {
+        ubicacion mapa
+        .cont-ubic-prim {
+            & iframe {
 
-        //     // }
-        // }
-        // .cont-ubic-segu {
-        //     // & iframe {
+            }
+        }
+        .cont-ubic-segu {
+            & iframe {
 
-        //     // }
-        // }                   lo comento porque no necesito editarlo pero lo dejo para mejor orden de codigo y lectura
+            }
+        }                   
     }
 }
 .mapas-gm iframe{
