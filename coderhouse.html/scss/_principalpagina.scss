@@ -1,4 +1,3 @@
-
 //boton volver 
 .btn-volver {
     position: fixed;
@@ -396,17 +395,17 @@
                 font-size: $tamaño-texto;
             }
         }
-        ubicacion mapa
-        .cont-ubic-prim {
-            & iframe {
+       // ubicacion mapa
+        // .cont-ubic-prim {
+        //     & iframe {
 
-            }
-        }
-        .cont-ubic-segu {
-            & iframe {
+        //     }
+        // }
+        // .cont-ubic-segu {
+        //     & iframe {
 
-            }
-        }                   
+        //     }
+        // }                   
     }
 }
 .mapas-gm iframe{
@@ -531,19 +530,18 @@ iframe {
     }
 
 }
-
 //footer
 
-    .footer {
-        border-top: 1px solid rgb(127, 124, 124);
-        margin-bottom: 0%;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        list-style: none;
-        gap: 40px;
-        padding: 15px ;
-            //nav
-        & .footer-inicio {
+.footer {
+    border-top: 1px solid rgb(127, 124, 124);
+    margin-bottom: 0%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    list-style: none;
+    gap: 40px;
+    padding: 15px ;
+        //nav
+    & .footer-inicio {
             text-align: center;
             & h3 {
                 padding-left: 40px;
@@ -567,7 +565,7 @@ iframe {
         }   
 
         //ayuda
-        & .footer-ayuda {
+    & .footer-ayuda {
             & h3 {
                 font-family: $tipo-titulo;
                 font-size: $tamaño-titulo;
@@ -588,7 +586,7 @@ iframe {
         }
 
         //medio contacto
-        & .medio-contacto {
+    & .medio-contacto {
             align-items: center;
             & h3 {
                 font-family: $tipo-titulo;
@@ -601,10 +599,6 @@ iframe {
                     text-align: start;
                     font-family: $tipo-texto;
                 }
-            }
+            }   
         }
     }
-
-        
-        
-       

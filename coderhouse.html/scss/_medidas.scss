@@ -1,0 +1,523 @@
+
+
+// apartado celu filas 12-358
+//apartado tablet filas 358- en adelante
+
+
+// media de medida celular
+// medidas @media celular
+// index 
+
+
+
+@media (max-width: $celular) {
+    .hr_header {
+        margin:0;
+    }
+}
+
+@media (max-width: $celular) {
+    .img-div{
+       display: none;
+}
+}
+
+/* sublista index */
+@media (max-width: $celular) {
+    .sublista_index {
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+        background-color: #a5a5a5;
+        padding: 10px 0;
+    }
+    .titulo-sublista {
+        padding-bottom: 15px;
+        margin: 0px auto 7px auto;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+    }
+
+    //contenedor exvese
+    .fondo-exvese {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        background-color: $color-sec;
+        display: grid;
+        align-items: center;
+        .contenedor-exvese {
+            width: 90%;
+            height: 240px;       
+            border-top: 3px solid #4d4c4c;
+            border-bottom: 3px solid #4d4c4c;
+            border-left: 20px solid #4d4c4c;
+            border-right: 20px solid #4d4c4c;
+            margin: 0 auto 0 auto;
+            text-align: center;
+    
+            & h2 {
+                padding: 1px;
+                font-family: $tipo-titulo;
+                font-size: 29px;
+            }
+            & p {
+                padding: 1px;
+                font-family: $tipo-texto;
+                font-size: $tamaño-texto;
+            }
+        }
+    }
+}
+
+@media (max-width: $celular) {
+    
+    .direc-text {
+        padding: 60px 0 0 0;
+        display: block;
+        min-width: 100%;
+    }
+    .contenedor_ubicaciones {
+    min-width: 100%;
+    padding: 0px;
+    
+        & h2 {
+            width: 90%;
+        }
+        & p {
+            width: 90%;
+        }
+    }
+    .apartado-direccion {
+        padding: 0px;
+    }
+    .texto-inicio {
+        text-align: start;
+        min-width: 100%;
+        padding: 5px; 
+    }
+}
+
+@media (max-width: $celular) {
+    .apartado-direccion {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        text-align: center ;      
+        .contenedor_ubicaciones {
+            width: 100%;
+            display: grid;
+            align-items: center;
+            & h2 {
+            font-family: $tipo-titulo;
+            font-size: $tamaño-titulo;
+            box-shadow: 5px solid #000;
+            margin-top: 0%;
+            }
+            & p {
+                font-family: $tipo-texto;
+                font-size: $tamaño-texto;
+            }
+            }
+            
+    } 
+}
+
+@media (max-width: $celular) {
+    /* apartado celu*/
+    .tipos-prendas-responsive {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .cont_1 p, .cont_2 p {
+        margin: 0;
+    }
+    .titulo_sec {
+        color: #4b86c5;
+        
+    }
+
+    .tipos-prendas {
+        display: none;
+    }
+    .prendas_oculta {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .prendas-oc-flex{
+        display: flex;
+        margin: 25px auto;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .prendas-oc-flex div p {
+        text-align: start;
+        margin: 0;
+
+        
+    }
+    .hr-tipo {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: $celular) {
+    .fondo-mapas {
+        background-color: $color-sec;
+        width: 100%;
+        height: auto;
+        .ubicacion_contenedor {
+            padding: 10px 0 30px 0;
+            width: 97%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 250px 250px 250px 250px ;
+            justify-content: center;
+            justify-items: center;
+            text-align: start;
+            align-items: center;
+            margin-left: 0%;
+            //ubicacion escrita
+            .pri-cont-text{
+                order: 1;
+                max-width: 300px;
+                & h3 {
+                    font-family: $tipo-titulo;
+                    font-size: $tamaño-titulo;
+                }
+                & p {
+                    margin: 0;
+                    font-family: $tipo-texto;
+                    font-size: $tamaño-texto;
+                }
+            }
+            & .sec-cont-text{
+                max-width: 310px;
+                order: 3;
+                & h3 {
+                    font-family: $tipo-titulo;
+                    font-size: $tamaño-titulo;
+                }
+                & p {
+                    margin: 0%;
+                    font-family: $tipo-texto;
+                    font-size: $tamaño-texto;
+                }
+            }
+          //  ubicacion mapa
+            .cont-ubic-prim {
+                order: 2;
+                & iframe {
+                    max-width: 300px;
+                    height: 160px;
+                }
+            }
+            .cont-ubic-segu {
+                order: 4;
+                & iframe {
+                    max-width: 300px;
+                    height: 160px;
+                }
+            }                   
+        }
+    }
+}
+
+@media (max-width: $celular) {
+    .titulo-marcas {
+        text-align: center;
+        font-size: 20px;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: $celular) {
+    .img-marcas {
+        margin: 0 auto;
+        width: 80%;
+       display: grid;
+       grid-template-columns: auto auto auto;
+       grid-template-rows: auto auto auto auto ;
+        justify-content: center;
+        gap: 15px;
+        padding: 30px 0;
+        align-items: center;
+    } 
+    .img-puma:hover {
+       transform: scale(1);
+    }
+    .img-reef:hover {
+        transform: scale(1);
+    }
+    .img-chs:hover {
+        transform: scale(1);
+    }
+    .img-est:hover {
+        transform: scale(1);
+    }
+    .img-head:hover {
+        transform: scale(1);
+    }
+    .img-cat:hover {
+        transform: scale(1);
+    }
+    .img-fan:hover {
+        transform: scale(1);
+    }
+    .img-sei:hover {
+        transform: scale(1);
+    }
+    .img-sil:hover {
+        transform: scale(1);
+    }
+    .img_marcas {
+        max-width: 80px;
+        height: auto;
+    }
+}
+
+@media (max-width: $celular) {
+            
+    
+            //medio contacto
+            .footer{
+                width: 100%;
+                display: flex;
+                background-color: #a5a5a5;
+                .footer-ayuda {
+                    display: none;
+                }
+                .footer-inicio {
+                    display: none;
+                }
+                .medio-contacto {
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                    order: 2;
+                    & h3 {
+                        text-align: center;
+                    }
+                    & ul{
+                        li {
+                            text-align: center;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+
+        // pagina ayuda celular --------------------
+
+        @media (max-width: $celular) {
+            .contenedor-img-preguntas {
+                display: none; 
+            }
+        }
+
+
+        // pagina cotizacion celular
+
+        @media (max-width: $celular) {
+            .img-estrechamiento {
+                display: none;
+            }
+            .cotizacion-aclaracion p {
+               padding: 0 15%;          
+            }
+            .cotizacion-aclaracion {
+               padding-top: 10px;              
+            }
+            
+        }
+
+        // pagina login celular
+
+        @media (max-width: $celular) {
+            .contenedor-loguin {
+                border: 2px solid #3e3e3c;
+                border-radius: 5%;
+                width: 70%;
+                margin: 50px auto;
+                padding: 10px 0;
+           
+           }
+        }
+
+        
+
+        // apartado pagina web shop
+
+        @media (max-width: $celular) {
+            .header-secundario {
+                background-color: #514f4f;
+                max-height: 70px;
+            }   
+            .header-secundario-ul{
+                margin:0; 
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 15px;
+                padding: 15px;
+            }
+            .contenedor-ropa{
+                width: 100%;
+                background-color:transparent;
+                display: grid;
+                grid-template-columns: auto auto;
+                margin-top: 30px;
+                padding: 8%;
+            }
+        }
+
+
+        //sublista tablet del index ---------------------------------------------------
+        
+        @media (min-width: $celular) and (max-width: $tablet) {
+            .hr_header {
+                margin:0;
+            }
+           //sublista
+            .sublista_index {
+                width: 100%;
+                height: 85px;
+                display: grid;
+                grid-template-columns: 250px 160px 250px;
+                grid-template-rows: 50px 50px;
+                justify-content: center;
+                background-color: #8f8f8f;
+            }
+        
+            .tipos-prendas-responsive {
+                display: block;
+                width: 70%;
+                margin: 0 auto;
+            }
+            .cont_1 p, .cont_2 p {
+                margin: 0;
+            }
+            .titulo_sec {
+                color: #4b86c5;
+                
+            }
+        
+            .tipos-prendas {
+                display: none;
+            }
+            .prendas_oculta {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            .prendas-oc-flex{
+                display: flex;
+                margin: 25px auto;
+                justify-content: space-around;
+                width: 100%;
+            }
+            .prendas-oc-flex div p {
+                text-align: start;
+                margin: 0;
+        
+                
+            }
+            .hr-tipo {
+                margin: 0;
+            }
+            // .apartado-direccion {
+            //     width: 100%;
+            //     margin-top: 50px;
+            //     display: grid;
+            //     grid-template-columns: 80%;
+            //     padding: 40px 40px 0 40px;
+            //     text-align: center;
+            //     gap: 30px;
+            //     justify-content: center;  
+           
+            // }
+            //mapas y ubic
+            .ubicacion_contenedor {
+                width: 95%;
+                display: grid;
+                grid-template-columns: 230px 230px;
+                grid-template-rows: 250px 250px;
+                justify-content: center;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 0%;
+                
+            }
+            .mapas-gm iframe{
+                width:280px ;
+                height: 180px; 
+                
+            }
+            iframe {
+                 border-radius: 5%; 
+            }
+            //seccion marcas trabajadas
+            .img-marcas {
+                margin: 0 auto;
+                width: 80%;
+               display: grid;
+               grid-template-columns: auto auto auto ;
+               grid-template-rows: auto auto auto auto ;
+                justify-content: center;
+                gap: 50px;
+                padding: 30px 0;
+                align-items: center;
+            } 
+            .img-puma:hover {
+               transform: scale(1);
+            }
+            .img-reef:hover {
+                transform: scale(1);
+            }
+            .img-chs:hover {
+                transform: scale(1);
+            }
+            .img-est:hover {
+                transform: scale(1);
+            }
+            .img-head:hover {
+                transform: scale(1);
+            }
+            .img-cat:hover {
+                transform: scale(1);
+            }
+            .img-fan:hover {
+                transform: scale(1);
+            }
+            .img-sei:hover {
+                transform: scale(1);
+            }
+            .img-sil:hover {
+                transform: scale(1);
+            }
+            .img_marcas {
+                width: 100px;
+                height: auto;
+            }
+        
+        }
+//sublista tablet del login ---------------------------------------------------
+
+@media (min-width: $celular) and (max-width: $tablet) {
+    .contenedor-loguin {
+        border: 2px solid #3e3e3c;
+        border-radius: 5%;
+        width: 60%;
+        margin: 50px auto;
+        padding: 10px 0; 
+   }   
+}        
