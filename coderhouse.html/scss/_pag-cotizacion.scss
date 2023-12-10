@@ -1,0 +1,59 @@
+
+.contenedor_pag_cot {
+    display: flex;
+    .img-estrechamiento {
+        img {
+            max-height: auto;
+            width: auto;
+            max-height:85vh ;
+            margin: 10px;
+            border-radius: 5%;
+        }
+    }
+    .contenedor-padre-cot {
+        .cotizacion-titulo {
+            text-align: center;
+            margin-top: 75px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:larger;
+            h1 {
+                .detalle-compra {
+                    p {
+
+                    }
+                    .imputs {
+                        div {
+                            input {
+                                padding-bottom: 10px;
+                                width: 200px;
+                                height: 30px;
+                                margin-left: 20px;
+                                background-color: transparent;
+                                border: none;
+                                border-bottom: 2px solid#77b7f6;
+                            }
+                            .buttom {
+                                padding: 10px 0 0 20px;
+                                background-color: transparent;
+                                border: none;
+                                border-bottom: 2px solid #749ce6;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cotizacion-aclaracion {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 10px;
+            .cotizacion-h2 {
+                text-align: center;
+            }
+            p {
+                padding: 10px 25%;
+                text-align: center;     
+            }
+        }
+
+    }
+}

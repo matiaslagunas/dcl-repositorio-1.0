@@ -319,8 +319,15 @@
         // pagina ayuda celular --------------------
 
         @media (max-width: $celular) {
+            .ayuda-contenedor {
+                width: 100%;
+                text-align: center;
+                padding-left: 30%;
+            }
             .contenedor-img-preguntas {
-                display: none; 
+                .img-pregunta{
+                    display: none; 
+                }
             }
         }
 
@@ -344,11 +351,13 @@
 
         @media (max-width: $celular) {
             .contenedor-loguin {
+
+                margin: 5% 10% 5% 10%;
                 border: 2px solid #3e3e3c;
                 border-radius: 5%;
-                width: 70%;
-                margin: 50px auto;
-                padding: 10px 0;
+                min-width: 100%;
+                margin: 20px auto;
+                padding: 10px;
            
            }
         }
