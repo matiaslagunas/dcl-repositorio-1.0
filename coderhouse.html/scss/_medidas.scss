@@ -31,6 +31,7 @@
         text-align: center;
         background-color: #a5a5a5;
         padding: 10px 0;
+        
     }
     .titulo-sublista {
         padding-bottom: 15px;
@@ -49,18 +50,20 @@
         align-items: center;
         .contenedor-exvese {
             width: 90%;
-            height: 240px;       
+            height: 270px;       
             border-top: 3px solid #4d4c4c;
             border-bottom: 3px solid #4d4c4c;
             border-left: 20px solid #4d4c4c;
             border-right: 20px solid #4d4c4c;
-            margin: 0 auto 0 auto;
+            margin: 0 auto;
             text-align: center;
+            padding: 5% ;
+            
     
             & h2 {
                 padding: 1px;
                 font-family: $tipo-titulo;
-                font-size: 29px;
+                font-size: 25px;
             }
             & p {
                 padding: 1px;
@@ -360,34 +363,28 @@
                 padding: 10px;
            
            }
+           
         }
 
         
 
         // apartado pagina web shop
-
         @media (max-width: $celular) {
             .header-secundario {
-                background-color: #514f4f;
-                max-height: 70px;
-            }   
-            .header-secundario-ul{
-                margin:0; 
-                list-style: none;
-                display: flex;
-                justify-content: center;
-                gap: 15px;
-                padding: 15px;
-            }
-            .contenedor-ropa{
-                width: 100%;
-                background-color:transparent;
-                display: grid;
-                grid-template-columns: auto auto;
-                margin-top: 30px;
-                padding: 8%;
+                background-color: #ecec3f;
+                padding: 0;
+                height: 200px;
+               
+                .header-secundario-ul{
+                    padding: 0;
+                    .sublista-palabra{
+                        padding: 0;
+        
+                    }
+                }
             }
         }
+        
 
 
         //sublista tablet del index ---------------------------------------------------
