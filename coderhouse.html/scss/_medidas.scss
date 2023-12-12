@@ -23,8 +23,9 @@
 }
 
 /* sublista index */
+/* sublista index */
 @media (max-width: $celular) {
-    .sublista_index {
+    .sublista_index-cell {
         width: 100%;
         height: auto;
         display: block;
@@ -32,6 +33,48 @@
         background-color: #a5a5a5;
         padding: 10px 0;
         
+    }
+    .titulo-sublista-cell {
+        font-family: $tipo-titulo;
+    }
+    .sublista_index-cell ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0%;
+        
+    }
+    .sublista_index-cell ul a {
+        text-decoration: none;
+        color: #000;
+        font-size: 25px;
+        font-family: $tipo-texto;
+        padding: 0;
+    }
+    .titulo-sublista-cell {
+        padding-bottom: 15px;
+        margin: 0px auto 7px auto;
+        font-family: 'Oswald', sans-serif;
+        font-size: 30px;
+    }
+}
+@media (max-width: $celular) {
+    .sublista_index {
+        display: none;
+        
+    }
+    .contenedor {
+       display: none;
+    }
+    .sublista_index ul {
+        // display: block;
+       background-color:#a5a5a5;
+       width: 0;
+    }
+    .sublista_index ul li {
+        // width: 100px;
+    }
+    .sublista_index ul li a {
+        // width: 100px;
     }
     .titulo-sublista {
         padding-bottom: 15px;
@@ -395,11 +438,7 @@
             }
            //sublista
             .sublista_index {
-                width: 100%;
-                height: 85px;
-                display: grid;
-                grid-template-columns: 250px 160px 250px;
-                grid-template-rows: 50px 50px;
+                width: 100%;                
                 justify-content: center;
                 background-color: #8f8f8f;
             }
