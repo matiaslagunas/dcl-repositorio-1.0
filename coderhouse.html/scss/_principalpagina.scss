@@ -69,9 +69,9 @@
         font-size: $tamaño-titulo;
     }
     & .contenedor {
-        margin: 10px auto;
-        width: 450px;
-        height: 50px;
+        margin: 30px auto 10px auto;
+        width: 600px;
+        height: 38px;
         background-color: #8f8f8f;
         position: relative;
         display: flex;
@@ -83,27 +83,29 @@
         padding-left: 0;
         display: flex;
         list-style: none;
-        width: 600px;
+        width: 750px;
            & li {
             position: relative; 
             list-style: none;
-            width: 150px;
+            width: 250px;
             height: 60px;
             z-index: 1;
             a {
+                width: 250px;
                 text-decoration: none;
                 position: relative;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                width: 180px;
+                width: 200px;
                 text-align: center;
                 font-weight: 500;
                 color: #090909;
                 font-family: $tipo-texto;
                 font-size: 15px;
                 & .text {
+                    width: 250px;
                     position: relative;
                     display: block;
                     line-height: 25px ;
@@ -456,17 +458,7 @@
                 font-size: $tamaño-texto;
             }
         }
-       // ubicacion mapa
-        // .cont-ubic-prim {
-        //     & iframe {
-
-        //     }
-        // }
-        // .cont-ubic-segu {
-        //     & iframe {
-
-        //     }
-        // }                   
+                       
     }
 }
 .mapas-gm iframe{

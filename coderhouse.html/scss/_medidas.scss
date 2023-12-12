@@ -70,12 +70,12 @@
        background-color:#a5a5a5;
        width: 0;
     }
-    .sublista_index ul li {
-        // width: 100px;
-    }
-    .sublista_index ul li a {
-        // width: 100px;
-    }
+    // .sublista_index ul li {
+    //     // width: 100px;
+    // }
+    // .sublista_index ul li a {
+    //     // width: 100px;
+    // }
     .titulo-sublista {
         padding-bottom: 15px;
         margin: 0px auto 7px auto;
@@ -490,26 +490,87 @@
             //     justify-content: center;  
            
             // }
-            //mapas y ubic
-            .ubicacion_contenedor {
-                width: 95%;
-                display: grid;
-                grid-template-columns: 230px 230px;
-                grid-template-rows: 250px 250px;
-                justify-content: center;
-                justify-content: space-around;
-                align-items: center;
-                margin-left: 0%;
-                
-            }
-            .mapas-gm iframe{
-                width:280px ;
-                height: 180px; 
-                
-            }
-            iframe {
-                 border-radius: 5%; 
-            }
+
+
+.fondo-mapas {
+    background-color: $color-sec;
+    width: 100%;
+    height: auto;
+.ubicacion_contenedor {
+margin: 0 auto;
+padding: 10px;
+width: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 250px 250px;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+//ubicacion escrita
+.pri-cont-text{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    & h3 {
+        font-family: $tipo-titulo;
+        font-size: $tamaño-titulo-mapas;
+    }
+    & p {
+        margin: 0;
+        font-family: $tipo-texto;
+        font-size: $tamaño-texto;
+    }
+}
+.sec-cont-text{
+    width: 100%;
+    margin: 0 auto;
+    
+    & h3 {
+        font-family: $tipo-titulo;
+        font-size: $tamaño-titulo-mapas;
+    }
+    & p {
+        margin: 0%;
+        font-family: $tipo-texto;
+        font-size: $tamaño-texto;
+        
+    }
+}
+//ubicacion mapa
+.cont-ubic-prim {
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    & iframe {
+        width: 250px;
+        padding: 0;
+    }
+}
+.cont-ubic-segu {
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    & iframe {
+        width: 250px;
+    }
+}                   
+}
+}
+.mapas-gm iframe{
+    width:200px ;
+    height: auto;     
+}
+iframe {
+    border-radius: 5%; 
+}
+
             //seccion marcas trabajadas
             .img-marcas {
                 margin: 0 auto;
@@ -554,7 +615,7 @@
                 height: auto;
             }
         
-        }
+        
 //sublista tablet del login ---------------------------------------------------
 
 @media (min-width: $celular) and (max-width: $tablet) {
