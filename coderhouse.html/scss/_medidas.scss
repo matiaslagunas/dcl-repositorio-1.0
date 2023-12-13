@@ -497,15 +497,16 @@
     width: 100%;
     height: auto;
 .ubicacion_contenedor {
+    justify-content: center;
+align-items: center;
+text-align: center;
 margin: 0 auto;
 padding: 10px;
 width: 100%;
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 250px 250px;
-justify-content: center;
-align-items: center;
-text-align: center;
+
 }
 
 
@@ -564,7 +565,7 @@ text-align: center;
 }
 }
 .mapas-gm iframe{
-    width:200px ;
+  
     height: auto;     
 }
 iframe {

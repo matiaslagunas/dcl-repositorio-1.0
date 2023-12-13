@@ -124,7 +124,7 @@
   letter-spacing: 0.3em;
   transition: 0.5s;
   opacity: 0;
-  transform: translateY(-20px);
+  transform: translateY(-80px);
   padding-top: 25px;
 }
 .sublista_index .contenedor ul li:hover a .text {
@@ -385,6 +385,7 @@
   justify-content: space-around;
   align-items: center;
   margin-left: 0%;
+  text-align: center;
 }
 .fondo-mapas .ubicacion_contenedor .pri-cont-text h3 {
   font-family: Arial;
@@ -406,13 +407,14 @@
   font-size: 18px;
 }
 
-.mapas-gm iframe {
-  width: 400px;
-  height: 200px;
+.mapas-gm {
+  width: 100%;
 }
 
 iframe {
   border-radius: 5%;
+  width: 300px;
+  height: auto;
 }
 
 .titulo-marcas {
@@ -1012,15 +1014,15 @@ iframe {
     height: auto;
   }
   .fondo-mapas .ubicacion_contenedor {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin: 0 auto;
     padding: 10px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 250px 250px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   .fondo-mapas .pri-cont-text {
     width: 100%;
@@ -1069,7 +1071,6 @@ iframe {
   }
 }
 .mapas-gm iframe {
-  width: 200px;
   height: auto;
 }
 
