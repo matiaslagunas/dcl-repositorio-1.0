@@ -61,7 +61,7 @@
     height: 110px;
     justify-content: center;
     margin: 0 auto;
-    background-color: #8f8f8f;
+    background-color: #a4a4a4;
     & .titulo-sublista {
         text-align: center;
         margin: 0 auto;
@@ -72,7 +72,7 @@
         margin: 30px auto 10px auto;
         width: 600px;
         height: 38px;
-        background-color: #8f8f8f;
+        background-color: #a4a4a4;
         position: relative;
         display: flex;
         justify-content: center;
@@ -124,7 +124,7 @@
                     letter-spacing: 0.3em;
                     transition: 0.5s;
                     opacity: 0;
-                    transform: translateY(-80px);
+                    transform: translateY(-70px);
                     padding-top: 25px;
                 }
 
@@ -137,7 +137,7 @@
         & li:hover a .icon {
             top: 15px;
             opacity: 1;
-            transform: translateY(-25px);
+            transform: translateY(-35px);
         }
         
 
