@@ -84,12 +84,16 @@
         
         
     ul {
+        position: absolute;
+        transform: translateX(3%);
         padding-left: 0;
         display: flex;
         list-style: none;
         width: 750px;
+        text-align: center;
            & li {
             position: relative; 
+            text-align: center;
             list-style: none;
             width: 250px;
             height: 60px;
@@ -301,17 +305,19 @@
             
         }
         & ul {
+            text-align: center;
             display: flex;
-            padding-left: 0;
+            left: 3%;
             gap: 20px;
             & .items-de-punto {
-              
+              text-align: center;
                 //texto-pag-comp
                 font-family: $tipo-texto;
                 font-size: $tamaño-texto;
                 //items-prendas
                 list-style: none;
                 text-align: start;
+                
 
                  .sublista_punto {
                     display: block;
@@ -340,7 +346,7 @@
                 //items-prendas
                 list-style:none;
                 text-align: start;
-
+                    
                  .sublista_plano {
                     display: block;
                     
@@ -438,7 +444,7 @@
         width: 120px;
         font-size: 25px;
         text-align: start;
-        color: blue;
+        color: rgb(94, 140, 255);
     }
   }
 //seccion mapas
@@ -627,14 +633,16 @@ iframe {
     padding: 15px ;
         //nav
     & .footer-inicio {
-            text-align: center;
-            & h3 {
+            justify-content: center;
+            & h4 {
                 text-align: center;
+                justify-content: center;
                 padding-left: 40px;
                 font-family: $tipo-titulo;
                 font-size: $tamaño-titulo;
             }
             & .footer-lista {
+                text-align: center;
                 & .li-footer {
                     list-style: none;
                     & a {
@@ -652,7 +660,7 @@ iframe {
 
         //ayuda
     & .footer-ayuda {
-            & h3 {
+            & h4 {
                 font-family: $tipo-titulo;
                 font-size: $tamaño-titulo;
                 text-align: center;
@@ -662,6 +670,7 @@ iframe {
                 grid-template-columns: auto auto auto;
                 grid-template-rows: auto auto auto;
                 align-items: center;
+                text-align: center;
                 justify-content: center; 
                 gap: 4px;
                 & .img-pago-footer {
@@ -673,16 +682,20 @@ iframe {
 
         //medio contacto
     & .medio-contacto {
-            align-items: center;
-            & h3 {
+            text-align: center;
+            
+            
+            & h4 {
                 font-family: $tipo-titulo;
                 font-size: $tamaño-titulo;
+                
             }
             & ul {
                 padding: 0%;
                 & li {
+                    
                     list-style: none;
-                    text-align: start;
+                    
                     font-family: $tipo-texto;
                 }
             }   
