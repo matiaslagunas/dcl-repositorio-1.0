@@ -28,6 +28,11 @@
     width: 80px;
     height: auto;
 }
+/* Estilo personalizado para el Navbar */
+.navbar-custom {
+    background-color: #727272; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+  }
 
 .img-div {
     // background-image: url("../imagenes-coder/foto-telas.jpg");
@@ -62,18 +67,14 @@
 }
 .sublista_index {
     width: 100%;
-    height: 110px;
+    height: 70px;
     justify-content: center;
     margin: 0 auto;
     background-color: #a4a4a4;
-    & .titulo-sublista {
-        text-align: center;
-        margin: 0 auto;
-        font-family: $tipo-titulo;
-        font-size: $tamaño-titulo;
-    }
+    
     & .contenedor {
-        margin: 30px auto 10px auto;
+        padding-top:55px ;
+        margin: 0 auto 10px auto;
         width: 600px;
         height: 38px;
         background-color: #a4a4a4;
@@ -167,6 +168,7 @@
     display:flex;
     width: 100%;
     margin-bottom: 50px;
+    justify-content: center;
     & .texto-inicio{
         text-align: start;
         max-width: 40%;
@@ -183,7 +185,8 @@
 
     }
     .img-principal {
-        background-image: url(../imagenes-coder/img-telas-index.jpg);   
+        
+        background-image: url(../imagenes-coder/Corte2l\ \(1\).webp);   
         background-repeat: no-repeat;
         background-size: cover;
         background-position-x: center;
@@ -193,28 +196,8 @@
         margin-right: 50px;
         border-radius: 2%;
         margin-left: 25px;
-        & div {
-            width: 100%;
-            height: 100%;
-            background-color: #bcbcbc;
-            border-radius: 2%;
-            opacity: 0.7;
-            display: none;
-            transition-duration: 0.5s;
-            .texto-img-principal {
-                margin: 0%;
-                width: 100%;
-                height: 100%;
-                text-align: center;
-                color: #000;   
-                font-family: $tipo-titulo;  
-                font-size: $tamaño-titulo;
-                padding-top: 22%;
-                border-radius: 2%;
-                display: none;
-                transition-duration: 1s;
-            }
-        }
+        max-width: 568px;
+        
     }
     .img-principal:hover .texto-img-principal {
         display: block;
@@ -227,71 +210,42 @@
 
 // contenedor exvese
 
-.fondo-exvese {
+.fondo-DIRECCION-TIPODEPRENDAS {
     width: 100%;
-    height: 350px;
+    height: 450px;
     margin: 0 auto;
     // background-color: $color-sec;
     background-color: #d2d2d2;
     display: grid;
     align-items: center;
-    .contenedor-exvese {
-        width: 90%;
-        height: 220px;       
-        // border-top: 3px solid #4d4c4c;
-        // border-bottom: 3px solid #4d4c4c;
-        // border-left: 20px solid #4d4c4c;
-        // border-right: 20px solid #4d4c4c;
-        border-top: 3px solid #000;
-        border-bottom: 3px solid #000;
-        border-left: 20px solid #000;
-        border-right: 20px solid #000;
-        margin: 0 auto 0 auto;
-        text-align: center;
+    // apartado act. industrial y tipos de prendas
 
-        & h2 {
-            padding: 3px;
+    .apartado-direccion {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 40%;
+        padding: 30px 15% 20px 7%;
+        text-align: center;
+        gap: 30px;
+        justify-content: space-between;
+        .contenedor_ubicaciones {
+            width: 100%;
+            padding: 40px 50px;
+            display: grid;
+            align-items: center;
+            & h2 {
             font-family: $tipo-titulo;
             font-size: $tamaño-titulo;
-            color: #000;
-        }
-        & p {
-            padding: 3px;
-            font-family: $tipo-texto;
-            font-size: $tamaño-texto;
-            color: #000;
-        }
-    }
-}
-
-// apartado act. industrial y tipos de prendas
-
-.apartado-direccion {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 40%;
-    padding: 30px 40px 20px 40px;
-    text-align: center;
-    gap: 30px;
-    justify-content: space-between;
-    .contenedor_ubicaciones {
-        width: 100%;
-        padding: 40px 50px;
-        display: grid;
-        align-items: center;
-        & h2 {
-        font-family: $tipo-titulo;
-        font-size: $tamaño-titulo;
-        box-shadow: 5px solid #000;
-        margin-top: 0%;
-        }
-        & p {
-            font-family: $tipo-texto;
-            font-size: $tamaño-texto;
-        }
-        }
-        
-} 
+            box-shadow: 5px solid #000;
+            margin-top: 0%;
+            }
+            & p {
+                font-family: $tipo-texto;
+                font-size: $tamaño-texto;
+            }
+            }
+            
+    } 
 
 .tipos-prendas {
         width: 100%;
@@ -397,6 +351,32 @@
             }
         }
 }
+    
+}
+.contenedor-exvese {
+    width: 90%;
+    height: 220px;       
+    // border-top: 3px solid #4d4c4c;
+    // border-bottom: 3px solid #4d4c4c;
+    // border-left: 20px solid #4d4c4c;
+    // border-right: 20px solid #4d4c4c;
+    margin: 50px auto 50px auto;
+    text-align: center;
+
+    & h2 {
+        padding: 3px;
+        font-family: $tipo-titulo;
+        font-size: $tamaño-titulo;
+        color: #000;
+    }
+    & p {
+        padding: 3px;
+        font-family: $tipo-texto;
+        font-size: $tamaño-texto;
+        color: #000;
+    }
+}
+
 
     //tipos de prendas responsive
 .tipos-prendas-responsive {
@@ -525,7 +505,8 @@ iframe {
 .img-marcas {
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
     text-align: center;
     gap: 10px;
     justify-content: space-around;
@@ -541,9 +522,7 @@ iframe {
             background-color: transparent;
             transition: 0.3s;           
         }
-        .img-puma:hover {
-            transform: scale(1.2);
-        }
+        
         //img reef
         & .img-reef {
             height: auto;
@@ -551,9 +530,7 @@ iframe {
             background-color: transparent;
             transition: 0.3s;
         }
-        .img-reef:hover {
-           transform: scale(1.2);
-         }
+        
          //img chs
         & .img-chs {
             height: auto;
@@ -561,63 +538,49 @@ iframe {
             background-color: transparent;
             transition: 0.3s;
         }
-        .img-chs:hover {
-            transform: scale(1.2);
-        }
+        
         //img estudiantes
         & .img-est {
             height: auto;
             width: 120px;
             transition: 0.3s;
         }
-        .img-est:hover {
-                transform: scale(1.2);
-        }
+        
         // img head
         & .img-head {
             width: 120px;
             height: auto;
             transition: .3s;
         }
-        .img-head:hover {
-            transform: scale(1.2);
-        }
+        
         //img cater
         & .img-cat {
             width: 120px;
             height: auto;
             transition: .3s;
         }
-        .img-cat:hover {
-            transform: scale(1.2);
-        }
+        
         // img fantoche
         & .img-fan {
             width: 120px;
             height: auto;
             transition: .3s;
         }
-        .img-fan:hover {
-            transform: scale(1.2);
-        }
+        
         // img seiko
         & .img-sei {
             width: 120px;
             height: auto;
             transition: .3s;
         }
-        .img-sei:hover {
-            transform: scale(1.2);
-        }
+        
         //img silla arg
         & .img-sil {
             width: 120px;
             height: auto;
             transition: .3s;
         }
-        .img-sil:hover {
-            transform: scale(1.2);
-        }
+        
     }
 
 }
@@ -627,7 +590,7 @@ iframe {
     border-top: 1px solid #7f7c7c;
     margin-bottom: 0%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     list-style: none;
     gap: 40px;
     padding: 15px ;
@@ -659,26 +622,7 @@ iframe {
         }   
 
         //ayuda
-    & .footer-ayuda {
-            & h4 {
-                font-family: $tipo-titulo;
-                font-size: $tamaño-titulo;
-                text-align: center;
-            }
-            & .contenedor-img-pagos {
-                display: grid;
-                grid-template-columns: auto auto auto;
-                grid-template-rows: auto auto auto;
-                align-items: center;
-                text-align: center;
-                justify-content: center; 
-                gap: 4px;
-                & .img-pago-footer {
-                    width: 60px;
-                    height: auto;
-                }
-            }
-        }
+    
 
         //medio contacto
     & .medio-contacto {
@@ -697,6 +641,10 @@ iframe {
                     list-style: none;
                     
                     font-family: $tipo-texto;
+                }
+                & p{
+                    margin: 0;
+                    padding-top: 5px;
                 }
             }   
         }
