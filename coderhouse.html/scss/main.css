@@ -296,6 +296,7 @@
   list-style: outside;
   text-align: start;
   color: #000;
+  display: block;
   transition-duration: 0.5s;
 }
 .fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-especiales .sublista_especiales li {
