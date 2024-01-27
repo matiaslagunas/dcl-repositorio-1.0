@@ -235,6 +235,7 @@
   font-size: 34px;
   text-align: center;
   padding-left: 0;
+  padding-left: 25%;
 }
 .fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul {
   text-align: center;
@@ -248,6 +249,9 @@
   font-size: 18px;
   list-style: none;
   text-align: start;
+}
+.fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-punto p {
+  text-align: center;
 }
 .fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-punto .sublista_punto {
   display: block;
@@ -269,6 +273,9 @@
   list-style: none;
   text-align: start;
 }
+.fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-plano p {
+  text-align: center;
+}
 .fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-plano .sublista_plano {
   display: block;
 }
@@ -288,7 +295,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 18px;
   list-style: none;
-  text-align: start;
+}
+.fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-especiales p {
+  text-align: center;
+  margin: 0 auto;
 }
 .fondo-DIRECCION-TIPODEPRENDAS .tipos-prendas ul .items-de-especiales .sublista_especiales {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
